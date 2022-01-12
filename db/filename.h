@@ -7,10 +7,12 @@
 #ifndef STORAGE_LEVELDB_DB_FILENAME_H_
 #define STORAGE_LEVELDB_DB_FILENAME_H_
 
-#include <bits/stdint-uintn.h>
+#include <cstdint>
 #include <string>
 
+#include "leveldb/slice.h"
 #include "leveldb/status.h"
+#include "port/port.h"
 
 namespace leveldb {
 

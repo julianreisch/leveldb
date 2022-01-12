@@ -4,10 +4,11 @@
 
 #include "db/dbformat.h"
 
-#include <cstring>
+#include <cstdio>
 #include <sstream>
 
-#include "util/logging.h"
+#include "port/port.h"
+#include "util/coding.h"
 
 namespace leveldb {
 

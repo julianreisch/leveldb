@@ -6,12 +6,11 @@
 
 #include <algorithm>
 
+#include "gtest/gtest.h"
 #include "port/port.h"
 #include "port/thread_annotations.h"
 #include "util/mutexlock.h"
 #include "util/testutil.h"
-
-#include "gtest/gtest.h"
 
 namespace leveldb {
 
@@ -102,7 +101,7 @@ TEST_F(EnvTest, RunMany) {
 
   struct Callback {
     RunState* state_;  // Pointer to shared state.
-    const int id_;     // Order# for the execution of this callback.
+    const int id_;  // Order# for the execution of this callback.
 
     Callback(RunState* s, int id) : state_(s), id_(id) {}
 

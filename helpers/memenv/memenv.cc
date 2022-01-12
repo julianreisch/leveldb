@@ -12,7 +12,6 @@
 
 #include "leveldb/env.h"
 #include "leveldb/status.h"
-
 #include "port/port.h"
 #include "port/thread_annotations.h"
 #include "util/mutexlock.h"
