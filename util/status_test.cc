@@ -4,7 +4,10 @@
 
 #include "leveldb/status.h"
 
-#include <gtest/gtest_pred_impl.h>
+#include <utility>
+
+#include "gtest/gtest.h"
+#include "leveldb/slice.h"
 
 namespace leveldb {
 

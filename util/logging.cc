@@ -2,12 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
+#include "util/logging.h"
+
 #include <cstdarg>
+#include <cstdio>
+#include <cstdlib>
 #include <limits>
-#include <string>
 
-#include <bits/stdint-uintn.h>
-
+#include "leveldb/env.h"
 #include "leveldb/slice.h"
 
 namespace leveldb {

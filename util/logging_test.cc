@@ -4,7 +4,10 @@
 
 #include "util/logging.h"
 
-#include <gtest/gtest_pred_impl.h>
+#include <limits>
+#include <string>
+
+#include "gtest/gtest.h"
 #include "leveldb/slice.h"
 
 namespace leveldb {

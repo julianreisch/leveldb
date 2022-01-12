@@ -5,20 +5,19 @@
 #include "db/version_set.h"
 
 #include <algorithm>
+#include <cstdio>
 
 #include "db/filename.h"
 #include "db/log_reader.h"
 #include "db/log_writer.h"
+#include "db/memtable.h"
 #include "db/table_cache.h"
 #include "leveldb/env.h"
-#include "leveldb/options.h"
-#include "leveldb/table.h"
-#include "leveldb/iterator.h"
+#include "leveldb/table_builder.h"
 #include "table/merger.h"
 #include "table/two_level_iterator.h"
+#include "util/coding.h"
 #include "util/logging.h"
-
-#include "port/port_stdcxx.h"
 
 namespace leveldb {
 
