@@ -4,10 +4,6 @@
 
 #include "util/arena.h"
 
-#include <atomic>
-#include <assert.h>
-#include <vector>
-
 namespace leveldb {
 
 static const int kBlockSize = 4096;

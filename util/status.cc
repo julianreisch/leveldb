@@ -4,7 +4,9 @@
 
 #include "leveldb/status.h"
 
-#include <cstring>
+#include <cstdio>
+
+#include "port/port.h"
 
 namespace leveldb {
 

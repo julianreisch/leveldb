@@ -6,12 +6,14 @@
 
 #include "table/block.h"
 
-#include "leveldb/comparator.h"
-#include "leveldb/iterator.h"
+#include <algorithm>
+#include <cstdint>
+#include <vector>
 
-#include "leveldb/status.h"
+#include "leveldb/comparator.h"
 #include "table/format.h"
 #include "util/coding.h"
+#include "util/logging.h"
 
 namespace leveldb {
 
