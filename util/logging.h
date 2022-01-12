@@ -8,11 +8,8 @@
 #ifndef STORAGE_LEVELDB_UTIL_LOGGING_H_
 #define STORAGE_LEVELDB_UTIL_LOGGING_H_
 
-#include <cstdint>
-#include <cstdio>
+#include <bits/stdint-uintn.h>
 #include <string>
-
-#include "port/port.h"
 
 namespace leveldb {
 
