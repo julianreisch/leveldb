@@ -3,10 +3,9 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "util/coding.h"
+#include "leveldb/slice.h"
 
-#include <vector>
-
-#include "gtest/gtest.h"
+#include <gtest/gtest_pred_impl.h>
 
 namespace leveldb {
 

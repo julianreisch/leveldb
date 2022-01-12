@@ -7,6 +7,7 @@
 
 #include <cstdint>
 #include <vector>
+#include <string>
 
 #include "leveldb/slice.h"
 

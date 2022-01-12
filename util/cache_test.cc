@@ -3,8 +3,7 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "leveldb/cache.h"
-
-#include <vector>
+#include "leveldb/slice.h"
 
 #include "gtest/gtest.h"
 #include "util/coding.h"
