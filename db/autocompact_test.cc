@@ -3,10 +3,9 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "db/db_impl.h"
-
 #include "leveldb/cache.h"
-#include "leveldb/iterator.h"
 
+#include "leveldb/iterator.h"
 #include "util/testutil.h"
 
 namespace leveldb {

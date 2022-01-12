@@ -6,12 +6,10 @@
 #include "db/log_reader.h"
 #include "db/version_edit.h"
 #include "db/write_batch_internal.h"
-
 #include "leveldb/env.h"
 #include "leveldb/iterator.h"
 #include "leveldb/options.h"
 #include "leveldb/table.h"
-
 #include "util/logging.h"
 
 namespace leveldb {

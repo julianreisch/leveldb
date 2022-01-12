@@ -4,8 +4,8 @@
 
 #include "db/dbformat.h"
 
-#include <cstring>
 #include <sstream>
+#include <cstring>
 
 #include "util/logging.h"
 

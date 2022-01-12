@@ -4,6 +4,8 @@
 
 #include "db/db_impl.h"
 
+#include <algorithm>
+
 #include "db/builder.h"
 #include "db/db_iter.h"
 #include "db/filename.h"
@@ -13,12 +15,9 @@
 #include "db/table_cache.h"
 #include "db/version_set.h"
 #include "db/write_batch_internal.h"
-#include <algorithm>
-
 #include "leveldb/env.h"
-#include "leveldb/iterator.h"
 #include "leveldb/table_builder.h"
-
+#include "leveldb/iterator.h"
 #include "table/merger.h"
 #include "util/logging.h"
 #include "util/mutexlock.h"

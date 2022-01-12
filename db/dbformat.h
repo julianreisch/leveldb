@@ -8,7 +8,6 @@
 #include "leveldb/comparator.h"
 #include "leveldb/filter_policy.h"
 #include "leveldb/slice.h"
-
 #include "util/coding.h"
 
 namespace leveldb {

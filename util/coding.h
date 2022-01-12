@@ -10,8 +10,8 @@
 #ifndef STORAGE_LEVELDB_UTIL_CODING_H_
 #define STORAGE_LEVELDB_UTIL_CODING_H_
 
-#include <bits/stdint-uintn.h>
 #include <string>
+#include <bits/stdint-uintn.h>
 
 #include "leveldb/slice.h"
 

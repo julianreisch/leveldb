@@ -4,15 +4,14 @@
 
 #include "db/db_impl.h"
 #include "db/filename.h"
-
 #include "leveldb/cache.h"
 #include "leveldb/iterator.h"
-#include "leveldb/write_batch.h"
 
+#include "leveldb/write_batch.h"
 #include "util/logging.h"
 #include "util/mutexlock.h"
-#include "util/random.h"
 #include "util/testutil.h"
+#include "util/random.h"
 
 namespace leveldb {
 

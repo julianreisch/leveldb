@@ -6,8 +6,8 @@
 #define STORAGE_LEVELDB_TABLE_BLOCK_BUILDER_H_
 
 #include <cstdint>
-#include <string>
 #include <vector>
+#include <string>
 
 #include "leveldb/slice.h"
 

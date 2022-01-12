@@ -5,8 +5,8 @@
 #ifndef STORAGE_LEVELDB_TABLE_BLOCK_H_
 #define STORAGE_LEVELDB_TABLE_BLOCK_H_
 
-#include <bits/stdint-uintn.h>
 #include <stddef.h>
+#include <bits/stdint-uintn.h>
 
 #include "leveldb/iterator.h"
 

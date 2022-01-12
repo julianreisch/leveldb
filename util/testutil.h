@@ -5,11 +5,9 @@
 #ifndef STORAGE_LEVELDB_UTIL_TESTUTIL_H_
 #define STORAGE_LEVELDB_UTIL_TESTUTIL_H_
 
-#include "helpers/memenv/memenv.h"
 #include <gmock/gmock-matchers.h>
-
+#include "helpers/memenv/memenv.h"
 #include "leveldb/env.h"
-
 #include "util/random.h"
 
 namespace leveldb {

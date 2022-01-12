@@ -15,7 +15,6 @@
 
 #include "db/memtable.h"
 #include "db/write_batch_internal.h"
-
 #include "leveldb/status.h"
 
 namespace leveldb {

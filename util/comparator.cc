@@ -5,7 +5,6 @@
 #include "leveldb/comparator.h"
 
 #include "leveldb/slice.h"
-
 #include "util/no_destructor.h"
 
 namespace leveldb {
