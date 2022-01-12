@@ -15,7 +15,7 @@
 #ifndef STORAGE_LEVELDB_INCLUDE_ITERATOR_H_
 #define STORAGE_LEVELDB_INCLUDE_ITERATOR_H_
 
-#include <assert.h>
+#include <cassert>
 
 #include "leveldb/export.h"
 #include "leveldb/slice.h"
