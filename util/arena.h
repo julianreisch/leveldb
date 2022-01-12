@@ -5,8 +5,10 @@
 #ifndef STORAGE_LEVELDB_UTIL_ARENA_H_
 #define STORAGE_LEVELDB_UTIL_ARENA_H_
 
-#include <assert.h>
 #include <atomic>
+#include <cassert>
+#include <cstddef>
+#include <cstdint>
 #include <vector>
 
 namespace leveldb {

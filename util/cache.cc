@@ -4,10 +4,12 @@
 
 #include "leveldb/cache.h"
 
-#include <cstring>
+#include <cassert>
+#include <cstdio>
+#include <cstdlib>
 
-#include "leveldb/slice.h"
-
+#include "port/port.h"
+#include "port/thread_annotations.h"
 #include "util/hash.h"
 #include "util/mutexlock.h"
 
