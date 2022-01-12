@@ -15,9 +15,9 @@
 #ifndef STORAGE_LEVELDB_INCLUDE_SLICE_H_
 #define STORAGE_LEVELDB_INCLUDE_SLICE_H_
 
-#include <string>
 #include <assert.h>
 #include <string.h>
+#include <string>
 
 #include "leveldb/export.h"
 

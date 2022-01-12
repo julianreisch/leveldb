@@ -3,6 +3,7 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "leveldb/comparator.h"
+
 #include "table/iterator_wrapper.h"
 
 namespace leveldb {

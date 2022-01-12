@@ -4,19 +4,20 @@
 
 #include "leveldb/table.h"
 
-#include <cstring>
-
 #include "db/memtable.h"
 #include "db/write_batch_internal.h"
+#include <cstring>
+
 #include "leveldb/db.h"
 #include "leveldb/iterator.h"
 #include "leveldb/table_builder.h"
+
+#include "port/port_stdcxx.h"
 #include "table/block.h"
 #include "table/block_builder.h"
 #include "table/format.h"
-#include "util/testutil.h"
-#include "port/port_stdcxx.h"
 #include "util/logging.h"
+#include "util/testutil.h"
 
 namespace leveldb {
 

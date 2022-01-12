@@ -4,8 +4,8 @@
 
 #include "util/arena.h"
 
-#include <atomic>
 #include <assert.h>
+#include <atomic>
 #include <vector>
 
 namespace leveldb {

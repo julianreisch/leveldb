@@ -8,13 +8,12 @@
 #ifndef __Fuchsia__
 #include <sys/resource.h>
 #endif
-#include <sys/stat.h>
-#include <unistd.h>
-
 #include <atomic>
 #include <cstring>
 #include <queue>
 #include <set>
+#include <sys/stat.h>
+#include <unistd.h>
 
 #include "port/port_stdcxx.h"
 #include "util/env_posix_test_helper.h"

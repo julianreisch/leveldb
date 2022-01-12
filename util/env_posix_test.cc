@@ -2,12 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
-#include <sys/resource.h>
-
 #include <cstring>
+#include <port/port_config.h>
+#include <sys/resource.h>
 #include <unordered_set>
 
-#include <port/port_config.h>
 #include "util/env_posix_test_helper.h"
 #include "util/testutil.h"
 

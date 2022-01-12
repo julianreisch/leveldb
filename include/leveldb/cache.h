@@ -19,7 +19,6 @@
 #define STORAGE_LEVELDB_INCLUDE_CACHE_H_
 
 #include <bits/stdint-uintn.h>
-
 #include <stddef.h>
 
 #include "leveldb/export.h"

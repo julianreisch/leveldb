@@ -7,8 +7,8 @@
 #ifndef STORAGE_LEVELDB_DB_FILENAME_H_
 #define STORAGE_LEVELDB_DB_FILENAME_H_
 
-#include <string>
 #include <bits/stdint-uintn.h>
+#include <string>
 
 #include "leveldb/status.h"
 

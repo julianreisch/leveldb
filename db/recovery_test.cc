@@ -6,8 +6,9 @@
 #include "db/filename.h"
 #include "db/write_batch_internal.h"
 
-#include "log_writer.h"
 #include "util/testutil.h"
+
+#include "log_writer.h"
 
 namespace leveldb {
 

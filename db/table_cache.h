@@ -10,10 +10,9 @@
 #include <string>
 
 #include "leveldb/cache.h"
-#include "leveldb/table.h"
-
-#include "leveldb/options.h"
 #include "leveldb/iterator.h"
+#include "leveldb/options.h"
+#include "leveldb/table.h"
 
 namespace leveldb {
 
