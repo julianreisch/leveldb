@@ -4,7 +4,7 @@
 
 #include "util/crc32c.h"
 
-#include "gtest/gtest.h"
+#include <gtest/gtest_pred_impl.h>
 
 namespace leveldb {
 namespace crc32c {

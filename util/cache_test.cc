@@ -4,11 +4,11 @@
 
 #include "leveldb/cache.h"
 
+#include <gtest/gtest_pred_impl.h>
+
 #include "leveldb/slice.h"
 
 #include "util/coding.h"
-
-#include "gtest/gtest.h"
 
 namespace leveldb {
 

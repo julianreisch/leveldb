@@ -29,8 +29,10 @@
 #include <snappy.h>
 #endif  // HAVE_SNAPPY
 
-#include <cassert>
+#include <assert.h>
+#include <bits/stdint-uintn.h>
 #include <condition_variable>  // NOLINT
+#include <string>
 
 #include "port/thread_annotations.h"
 

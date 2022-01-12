@@ -3,9 +3,15 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include <cstring>
+#include <gmock/gmock-matchers.h>
+#include <gtest/gtest_pred_impl.h>
+#include <gtest/internal/gtest-internal.h>
 #include <port/port_config.h>
 #include <sys/resource.h>
 #include <unordered_set>
+
+#include "leveldb/env.h"
+#include "leveldb/slice.h"
 
 #include "util/env_posix_test_helper.h"
 #include "util/testutil.h"

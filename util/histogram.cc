@@ -5,8 +5,6 @@
 #include "util/histogram.h"
 
 #include <cmath>
-#include <cstdio>
-#include <string>
 
 namespace leveldb {
 

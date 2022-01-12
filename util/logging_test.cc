@@ -4,7 +4,7 @@
 
 #include "util/logging.h"
 
-#include <gtest/gtest_pred_impl.h>
+#include <gtest/gtest.h>
 
 #include "leveldb/slice.h"
 
