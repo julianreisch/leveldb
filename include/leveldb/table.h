@@ -5,10 +5,11 @@
 #ifndef STORAGE_LEVELDB_INCLUDE_TABLE_H_
 #define STORAGE_LEVELDB_INCLUDE_TABLE_H_
 
-#include <cstdint>
+#include <bits/stdint-uintn.h>
 
 #include "leveldb/export.h"
 #include "leveldb/iterator.h"
+#include "status.h"
 
 namespace leveldb {
 

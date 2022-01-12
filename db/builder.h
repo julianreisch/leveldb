@@ -7,6 +7,8 @@
 
 #include "leveldb/status.h"
 
+#include <string>
+
 namespace leveldb {
 
 struct Options;

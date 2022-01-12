@@ -4,8 +4,6 @@
 
 #include "db/log_writer.h"
 
-#include <cstdint>
-
 #include "leveldb/env.h"
 #include "util/coding.h"
 #include "util/crc32c.h"

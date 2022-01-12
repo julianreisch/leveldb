@@ -5,7 +5,7 @@
 #ifndef STORAGE_LEVELDB_DB_LOG_READER_H_
 #define STORAGE_LEVELDB_DB_LOG_READER_H_
 
-#include <cstdint>
+#include <string>
 
 #include "db/log_format.h"
 #include "leveldb/slice.h"

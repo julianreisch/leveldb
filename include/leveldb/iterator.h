@@ -19,6 +19,8 @@
 #include "leveldb/slice.h"
 #include "leveldb/status.h"
 
+#include <assert.h>
+
 namespace leveldb {
 
 class LEVELDB_EXPORT Iterator {
