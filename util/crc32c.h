@@ -5,8 +5,8 @@
 #ifndef STORAGE_LEVELDB_UTIL_CRC32C_H_
 #define STORAGE_LEVELDB_UTIL_CRC32C_H_
 
-#include <cstdint>
 #include <cstddef>
+#include <cstdint>
 
 namespace leveldb {
 namespace crc32c {
