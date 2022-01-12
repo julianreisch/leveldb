@@ -6,7 +6,7 @@
 #define STORAGE_LEVELDB_TABLE_BLOCK_H_
 
 #include <cstdint>
-#include <stddef.h>
+#include <cstddef>
 
 #include "leveldb/iterator.h"
 

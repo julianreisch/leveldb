@@ -4,7 +4,7 @@
 
 #include "util/arena.h"
 
-#include <assert.h>
+#include <cassert>
 #include <atomic>
 #include <vector>
 
