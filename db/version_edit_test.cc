@@ -4,9 +4,9 @@
 
 #include "db/version_edit.h"
 
-#include <gtest/gtest_pred_impl.h>
-
 #include "leveldb/status.h"
+
+#include "gtest/gtest.h"
 
 namespace leveldb {
 

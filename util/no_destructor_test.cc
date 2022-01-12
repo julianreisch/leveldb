@@ -4,7 +4,7 @@
 
 #include "util/no_destructor.h"
 
-#include <gtest/gtest_pred_impl.h>
+#include "gtest/gtest.h"
 
 namespace leveldb {
 

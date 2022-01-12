@@ -6,8 +6,8 @@
 #define STORAGE_LEVELDB_DB_LOG_WRITER_H_
 
 #include "db/log_format.h"
-#include <bits/stdint-uintn.h>
-#include <stddef.h>
+#include <cstddef>
+#include <cstdint>
 
 #include "leveldb/status.h"
 

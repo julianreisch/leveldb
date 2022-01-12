@@ -28,8 +28,6 @@
 
 #include "table/block_builder.h"
 
-#include <assert.h>
-
 #include "leveldb/options.h"
 #include "leveldb/slice.h"
 

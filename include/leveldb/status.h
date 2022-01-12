@@ -13,11 +13,7 @@
 #ifndef STORAGE_LEVELDB_INCLUDE_STATUS_H_
 #define STORAGE_LEVELDB_INCLUDE_STATUS_H_
 
-#include <string>
-
 #include "leveldb/slice.h"
-
-#include "export.h"
 
 namespace leveldb {
 

@@ -6,6 +6,7 @@
 #define STORAGE_LEVELDB_DB_VERSION_EDIT_H_
 
 #include "db/dbformat.h"
+#include <map>
 #include <set>
 #include <vector>
 

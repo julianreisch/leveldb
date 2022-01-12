@@ -3,7 +3,7 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include <atomic>
-#include <stdlib.h>
+#include <cstdlib>
 
 #include "leveldb/cache.h"
 #include "leveldb/comparator.h"

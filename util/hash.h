@@ -7,8 +7,8 @@
 #ifndef STORAGE_LEVELDB_UTIL_HASH_H_
 #define STORAGE_LEVELDB_UTIL_HASH_H_
 
-#include <bits/stdint-uintn.h>
-#include <stddef.h>
+#include <cstddef>
+#include <cstdint>
 
 namespace leveldb {
 

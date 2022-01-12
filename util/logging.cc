@@ -3,7 +3,9 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include <cstdarg>
+#include <cstdint>
 #include <limits>
+#include <string>
 
 #include "leveldb/slice.h"
 
