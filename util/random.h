@@ -5,7 +5,7 @@
 #ifndef STORAGE_LEVELDB_UTIL_RANDOM_H_
 #define STORAGE_LEVELDB_UTIL_RANDOM_H_
 
-#include <cstdint>
+#include <bits/stdint-uintn.h>
 
 namespace leveldb {
 
