@@ -4,8 +4,9 @@
 
 #include "gtest/gtest.h"
 #include "leveldb/filter_policy.h"
-#include "leveldb/slice.h"
 #include "util/coding.h"
+#include "util/logging.h"
+#include "util/testutil.h"
 
 namespace leveldb {
 

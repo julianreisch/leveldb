@@ -7,6 +7,8 @@
 
 #include <atomic>
 #include <cassert>
+#include <cstddef>
+#include <cstdint>
 #include <vector>
 
 namespace leveldb {

@@ -15,12 +15,14 @@
 #ifndef STORAGE_LEVELDB_DB_VERSION_SET_H_
 #define STORAGE_LEVELDB_DB_VERSION_SET_H_
 
+#include <map>
+#include <set>
+#include <vector>
 
+#include "db/dbformat.h"
 #include "db/version_edit.h"
+#include "port/port.h"
 #include "port/thread_annotations.h"
-#include "leveldb/status.h"
-#include "leveldb/options.h"
-#include "port/port_stdcxx.h"
 
 namespace leveldb {
 

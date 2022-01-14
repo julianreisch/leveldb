@@ -6,12 +6,10 @@
 #define STORAGE_LEVELDB_DB_VERSION_EDIT_H_
 
 #include <set>
+#include <utility>
 #include <vector>
-#include <map>
-#include <ext/aligned_buffer.h>
 
 #include "db/dbformat.h"
-#include "leveldb/status.h"
 
 namespace leveldb {
 
