@@ -6,6 +6,7 @@
 #include "db/db_impl.h"
 #include "leveldb/cache.h"
 #include "leveldb/db.h"
+#include "leveldb/iterator.h"
 #include "util/testutil.h"
 
 namespace leveldb {

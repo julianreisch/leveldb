@@ -6,10 +6,9 @@
 
 #include "util/crc32c.h"
 
-#include <cstddef>
 #include <cstdint>
 
-#include "port/port.h"
+#include "port/port_stdcxx.h"
 #include "util/coding.h"
 
 namespace leveldb {

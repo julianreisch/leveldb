@@ -8,13 +8,13 @@
 #include "db/db_impl.h"
 #include "db/filename.h"
 #include "db/log_format.h"
-#include "db/version_set.h"
 #include "leveldb/cache.h"
 #include "leveldb/db.h"
-#include "leveldb/table.h"
 #include "leveldb/write_batch.h"
+#include "leveldb/iterator.h"
 #include "util/logging.h"
 #include "util/testutil.h"
+#include "util/random.h"
 
 namespace leveldb {
 

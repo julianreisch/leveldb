@@ -5,24 +5,21 @@
 #include "leveldb/db.h"
 
 #include <atomic>
-#include <cinttypes>
 #include <string>
 
 #include "gtest/gtest.h"
 #include "db/db_impl.h"
 #include "db/filename.h"
-#include "db/version_set.h"
-#include "db/write_batch_internal.h"
 #include "leveldb/cache.h"
 #include "leveldb/env.h"
 #include "leveldb/filter_policy.h"
-#include "leveldb/table.h"
-#include "port/port.h"
+#include "leveldb/write_batch.h"
+#include "leveldb/iterator.h"
 #include "port/thread_annotations.h"
-#include "util/hash.h"
 #include "util/logging.h"
 #include "util/mutexlock.h"
 #include "util/testutil.h"
+#include "util/random.h"
 
 namespace leveldb {
 

@@ -3,10 +3,10 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "db/version_set.h"
+#include "version_edit.h"
 
 #include "gtest/gtest.h"
 #include "util/logging.h"
-#include "util/testutil.h"
 
 namespace leveldb {
 
