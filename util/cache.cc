@@ -3,13 +3,9 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "leveldb/cache.h"
+#include "leveldb/slice.h"
 
-#include <cassert>
-#include <cstdio>
-#include <cstdlib>
 
-#include "port/port.h"
-#include "port/thread_annotations.h"
 #include "util/hash.h"
 #include "util/mutexlock.h"
 

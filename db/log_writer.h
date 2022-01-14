@@ -6,9 +6,9 @@
 #define STORAGE_LEVELDB_DB_LOG_WRITER_H_
 
 #include <cstdint>
+#include <stddef.h>
 
 #include "db/log_format.h"
-#include "leveldb/slice.h"
 #include "leveldb/status.h"
 
 namespace leveldb {

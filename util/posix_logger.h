@@ -10,10 +10,7 @@
 
 #include <sys/time.h>
 
-#include <cassert>
 #include <cstdarg>
-#include <cstdio>
-#include <ctime>
 #include <sstream>
 #include <thread>
 

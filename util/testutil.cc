@@ -4,9 +4,9 @@
 
 #include "util/testutil.h"
 
-#include <string>
 
 #include "util/random.h"
+#include "leveldb/slice.h"
 
 namespace leveldb {
 namespace test {

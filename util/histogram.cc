@@ -5,9 +5,7 @@
 #include "util/histogram.h"
 
 #include <cmath>
-#include <cstdio>
 
-#include "port/port.h"
 
 namespace leveldb {
 

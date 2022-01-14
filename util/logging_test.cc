@@ -4,8 +4,6 @@
 
 #include "util/logging.h"
 
-#include <limits>
-#include <string>
 
 #include "gtest/gtest.h"
 #include "leveldb/slice.h"
