@@ -9,8 +9,8 @@
 
 #include "db/dbformat.h"
 #include "db/skiplist.h"
-#include "leveldb/db.h"
-#include "util/arena.h"
+#include "leveldb/iterator.h"
+#include "leveldb/comparator.h"
 
 namespace leveldb {
 

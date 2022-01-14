@@ -22,6 +22,7 @@
 #define STORAGE_LEVELDB_INCLUDE_WRITE_BATCH_H_
 
 #include <string>
+#include <stddef.h>
 
 #include "leveldb/export.h"
 #include "leveldb/status.h"

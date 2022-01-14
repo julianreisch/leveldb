@@ -6,9 +6,15 @@
 
 #include <cstdint>
 #include <cstdlib>
-#include <utility>
+#include <iostream>
+#include <string>
 
 #include "gtest/gtest.h"
+#include <gtest/internal/gtest-port.h>
+#include <gtest/gtest-printers.h>
+#include <gtest/gtest-message.h>
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/gtest-test-part.h>
 
 namespace leveldb {
 

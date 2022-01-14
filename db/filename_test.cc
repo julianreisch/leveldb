@@ -5,9 +5,15 @@
 #include "db/filename.h"
 
 #include "gtest/gtest.h"
-#include "db/dbformat.h"
-#include "port/port.h"
-#include "util/logging.h"
+#include <gtest/internal/gtest-port.h>
+#include <gtest/internal/gtest-internal.h>
+#include <tuple>
+#include <gtest/gtest-printers.h>
+#include <memory>
+#include <gtest/gtest-test-part.h>
+#include <iostream>
+#include <gtest/gtest-message.h>
+#include "leveldb/slice.h"
 
 namespace leveldb {
 

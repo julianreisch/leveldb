@@ -5,11 +5,18 @@
 #include "table/filter_block.h"
 
 #include "gtest/gtest.h"
+#include <tuple>
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/internal/gtest-port.h>
+#include <gtest/gtest-message.h>
+#include <memory>
+#include <gtest/gtest-test-part.h>
+#include <gtest/gtest-printers.h>
 #include "leveldb/filter_policy.h"
+#include "leveldb/slice.h"
 #include "util/coding.h"
 #include "util/hash.h"
 #include "util/logging.h"
-#include "util/testutil.h"
 
 namespace leveldb {
 

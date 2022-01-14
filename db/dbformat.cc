@@ -4,11 +4,15 @@
 
 #include "db/dbformat.h"
 
-#include <cstdio>
 #include <sstream>
+#include <cstring>
+#include <cassert>
 
-#include "port/port.h"
 #include "util/coding.h"
+#include "leveldb/comparator.h"
+#include "leveldb/filter_policy.h"
+#include "leveldb/slice.h"
+#include "util/logging.h"
 
 namespace leveldb {
 

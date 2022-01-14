@@ -5,9 +5,16 @@
 #include "util/logging.h"
 
 #include <limits>
-#include <string>
+#include <tuple>
+#include <iostream>
+#include <memory>
 
-#include "gtest/gtest.h"
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/internal/gtest-port.h>
+#include <gtest/gtest_pred_impl.h>
+#include <gtest/gtest-test-part.h>
+#include <gtest/gtest-printers.h>
+#include <gtest/gtest-message.h>
 #include "leveldb/slice.h"
 
 namespace leveldb {

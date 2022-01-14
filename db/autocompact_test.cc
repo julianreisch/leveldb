@@ -3,9 +3,19 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "gtest/gtest.h"
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/gtest-matchers.h>
+#include <istream>
+#include <gtest/internal/gtest-port.h>
+#include <gtest/gtest-printers.h>
+#include <iostream>
+#include <gmock/gmock-matchers.h>
+#include <gtest/gtest-message.h>
+#include <gtest/gtest-test-part.h>
 #include "db/db_impl.h"
 #include "leveldb/cache.h"
-#include "leveldb/db.h"
+#include "leveldb/iterator.h"
+#include "leveldb/env.h"
 #include "util/testutil.h"
 
 namespace leveldb {

@@ -4,17 +4,16 @@
 
 #include "leveldb/table_builder.h"
 
-#include <cassert>
 
 #include "leveldb/comparator.h"
 #include "leveldb/env.h"
 #include "leveldb/filter_policy.h"
-#include "leveldb/options.h"
 #include "table/block_builder.h"
 #include "table/filter_block.h"
 #include "table/format.h"
 #include "util/coding.h"
 #include "util/crc32c.h"
+#include "port/port_stdcxx.h"
 
 namespace leveldb {
 

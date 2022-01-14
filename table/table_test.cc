@@ -5,10 +5,17 @@
 #include "leveldb/table.h"
 
 #include <map>
-#include <string>
+#include <istream>
+#include <iostream>
 
 #include "gtest/gtest.h"
-#include "db/dbformat.h"
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/internal/gtest-port.h>
+#include <gmock/gmock-matchers.h>
+#include <gtest/gtest-matchers.h>
+#include <gtest/gtest-printers.h>
+#include <gtest/gtest-test-part.h>
+#include <gtest/gtest-message.h>
 #include "db/memtable.h"
 #include "db/write_batch_internal.h"
 #include "leveldb/db.h"
@@ -18,8 +25,9 @@
 #include "table/block.h"
 #include "table/block_builder.h"
 #include "table/format.h"
-#include "util/random.h"
 #include "util/testutil.h"
+#include "port/port_stdcxx.h"
+#include "util/logging.h"
 
 namespace leveldb {
 

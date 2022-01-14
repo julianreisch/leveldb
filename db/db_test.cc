@@ -2,27 +2,28 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
-#include "leveldb/db.h"
 
-#include <atomic>
-#include <cinttypes>
-#include <string>
+#include <istream>
+#include <iostream>
 
-#include "gtest/gtest.h"
+#include <gtest/gtest_pred_impl.h>
+#include <gmock/gmock-matchers.h>
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/internal/gtest-port.h>
+#include <gtest/gtest-printers.h>
+#include <gtest/gtest-message.h>
+#include <gtest/gtest-matchers.h>
+#include <gtest/gtest-test-part.h>
 #include "db/db_impl.h"
 #include "db/filename.h"
-#include "db/version_set.h"
-#include "db/write_batch_internal.h"
 #include "leveldb/cache.h"
 #include "leveldb/env.h"
-#include "leveldb/filter_policy.h"
-#include "leveldb/table.h"
-#include "port/port.h"
-#include "port/thread_annotations.h"
-#include "util/hash.h"
+#include "leveldb/iterator.h"
+#include "leveldb/write_batch.h"
 #include "util/logging.h"
 #include "util/mutexlock.h"
 #include "util/testutil.h"
+#include "util/random.h"
 
 namespace leveldb {
 

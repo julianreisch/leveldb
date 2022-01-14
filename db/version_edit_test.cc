@@ -3,8 +3,15 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "db/version_edit.h"
+#include "leveldb/status.h"
 
 #include "gtest/gtest.h"
+#include <gtest/internal/gtest-port.h>
+#include <gtest/internal/gtest-internal.h>
+#include <memory>
+#include <gtest/gtest-printers.h>
+#include <gtest/gtest-test-part.h>
+#include <gtest/gtest-message.h>
 
 namespace leveldb {
 

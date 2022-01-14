@@ -3,8 +3,14 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "leveldb/env.h"
+#include "leveldb/status.h"
+#include "leveldb/slice.h"
 
 #include <cstdarg>
+#include <new>
+#include <stddef.h>
+#include <stdarg.h>
+#include <string>
 
 // This workaround can be removed when leveldb::Env::DeleteFile is removed.
 // See env.h for justification.

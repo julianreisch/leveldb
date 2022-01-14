@@ -3,10 +3,19 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "gtest/gtest.h"
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/internal/gtest-port.h>
+#include <vector>
+#include <memory>
+#include <tuple>
+#include <gtest/gtest-test-part.h>
+#include <iostream>
+#include <gtest/gtest-message.h>
+#include <gtest/gtest-printers.h>
+#include <istream>
 #include "leveldb/filter_policy.h"
+#include "leveldb/slice.h"
 #include "util/coding.h"
-#include "util/logging.h"
-#include "util/testutil.h"
 
 namespace leveldb {
 

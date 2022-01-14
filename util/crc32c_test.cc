@@ -5,6 +5,18 @@
 #include "util/crc32c.h"
 
 #include "gtest/gtest.h"
+#include <gtest/internal/gtest-port.h>
+#include <gtest/internal/gtest-internal.h>
+#include <stddef.h>
+#include <string>
+#include <cstring>
+#include <istream>
+#include <cstddef>
+#include <gtest/gtest-printers.h>
+#include <cstdint>
+#include <iostream>
+#include <gtest/gtest-message.h>
+#include <gtest/gtest-test-part.h>
 
 namespace leveldb {
 namespace crc32c {

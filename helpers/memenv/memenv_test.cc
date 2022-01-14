@@ -2,15 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
-#include "helpers/memenv/memenv.h"
 
-#include <string>
-#include <vector>
+#include <iostream>
 
-#include "gtest/gtest.h"
+#include <gtest/gtest_pred_impl.h>
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/internal/gtest-port.h>
+#include <gtest/gtest-printers.h>
+#include <gmock/gmock-matchers.h>
+#include <gtest/gtest-matchers.h>
+#include <gtest/gtest-test-part.h>
+#include <gtest/gtest-message.h>
 #include "db/db_impl.h"
-#include "leveldb/db.h"
 #include "leveldb/env.h"
+#include "leveldb/iterator.h"
 #include "util/testutil.h"
 
 namespace leveldb {

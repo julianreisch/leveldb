@@ -4,8 +4,12 @@
 
 #include "db/version_edit.h"
 
-#include "db/version_set.h"
-#include "util/coding.h"
+#include "dbformat.h"
+#include <vector>
+#include "leveldb/status.h"
+#include <map>
+#include <set>
+#include "util/logging.h"
 
 namespace leveldb {
 

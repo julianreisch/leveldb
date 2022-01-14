@@ -5,6 +5,19 @@
 #include "util/arena.h"
 
 #include "gtest/gtest.h"
+#include <gtest/internal/gtest-port.h>
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/gtest-test-part.h>
+#include <utility>
+#include <string>
+#include <istream>
+#include <iostream>
+#include <type_traits>
+#include <gtest/gtest-message.h>
+#include <gtest/gtest-printers.h>
+#include <ext/new_allocator.h>
+#include <vector>
+#include <stddef.h>
 #include "util/random.h"
 
 namespace leveldb {

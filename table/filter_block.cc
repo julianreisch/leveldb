@@ -5,7 +5,10 @@
 #include "table/filter_block.h"
 
 #include "leveldb/filter_policy.h"
+#include "leveldb/slice.h"
 #include "util/coding.h"
+#include <vector>
+#include <cassert>
 
 namespace leveldb {
 

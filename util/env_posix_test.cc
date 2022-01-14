@@ -4,7 +4,11 @@
 
 #include <sys/resource.h>
 #include <sys/wait.h>
+#include <sys/cdefs.h>
+#include <bits/types/FILE.h>
 #include <unistd.h>
+#include <asm-generic/errno-base.h>
+#include <features.h>
 
 #include <cstdio>
 #include <cstdlib>
@@ -12,10 +16,33 @@
 #include <string>
 #include <unordered_set>
 #include <vector>
+#include <utility>
+#include <type_traits>
+#include <ext/aligned_buffer.h>
+#include <tuple>
+#include <cstddef>
+#include <ext/new_allocator.h>
+#include <new>
+#include <iostream>
+#include <istream>
+#include <memory>
+#include <ext/type_traits.h>
+#include <cerrno>
+#include <ext/alloc_traits.h>
 
-#include "gtest/gtest.h"
+#include <gtest/internal/gtest-port.h>
+#include <gtest/gtest_pred_impl.h>
+#include <gtest/internal/gtest-internal.h>
+#include <gmock/gmock-matchers.h>
+#include <stddef.h>
+#include <gtest/gtest-matchers.h>
+#include <gtest/gtest-printers.h>
+#include <gtest/gtest-test-part.h>
+#include <port/port_config.h>
+#include <gtest/gtest-message.h>
 #include "leveldb/env.h"
-#include "port/port.h"
+#include "leveldb/status.h"
+#include "leveldb/slice.h"
 #include "util/env_posix_test_helper.h"
 #include "util/testutil.h"
 
