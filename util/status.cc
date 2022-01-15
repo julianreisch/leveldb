@@ -6,7 +6,6 @@
 
 #include <cstdio>
 
-#include "port/port.h"
 
 namespace leveldb {
 
