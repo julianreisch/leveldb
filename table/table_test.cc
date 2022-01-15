@@ -20,7 +20,7 @@
 #include "table/format.h"
 #include "util/random.h"
 #include "util/testutil.h"
-#include "port/port_stdcxx.h"
+#include "port/port.h"
 #include "util/logging.h"
 
 namespace leveldb {
