@@ -11,7 +11,6 @@
 #include <cstdint>
 #include <string>
 
-
 namespace leveldb {
 
 class Slice;
