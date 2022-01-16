@@ -5,7 +5,6 @@
 #ifndef STORAGE_LEVELDB_PORT_PORT_H_
 #define STORAGE_LEVELDB_PORT_PORT_H_
 
-
 // Include the appropriate platform specific file below.  If you are
 // porting to a new platform, see "port_example.h" for documentation
 // of what the new port_<platform>.h file must provide.

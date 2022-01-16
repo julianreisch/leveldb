@@ -7,7 +7,6 @@
 #include <cmath>
 #include <cstdio>
 
-
 namespace leveldb {
 
 const double Histogram::kBucketLimit[kNumBuckets] = {

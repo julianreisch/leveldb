@@ -4,7 +4,6 @@
 
 #include "util/hash.h"
 
-
 #include "util/coding.h"
 
 // The FALLTHROUGH_INTENDED macro can be used to annotate implicit fall-through

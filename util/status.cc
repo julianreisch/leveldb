@@ -6,7 +6,6 @@
 
 #include <cstdio>
 
-
 namespace leveldb {
 
 const char* Status::CopyState(const char* state) {
