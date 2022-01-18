@@ -8,6 +8,7 @@
 #include <string>
 
 #include "gtest/gtest.h"
+#include <gmock/gmock-matchers.h>
 #include "db/dbformat.h"
 #include "db/memtable.h"
 #include "db/write_batch_internal.h"
@@ -15,11 +16,18 @@
 #include "leveldb/env.h"
 #include "leveldb/iterator.h"
 #include "leveldb/table_builder.h"
+#include "leveldb/options.h"
+#include "leveldb/comparator.h"
+#include "leveldb/write_batch.h"
+#include "leveldb/status.h"
+#include "leveldb/slice.h"
 #include "table/block.h"
 #include "table/block_builder.h"
 #include "table/format.h"
 #include "util/random.h"
 #include "util/testutil.h"
+#include "port/port_stdcxx.h"
+#include "util/logging.h"
 
 namespace leveldb {
 

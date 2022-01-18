@@ -6,11 +6,12 @@
 #define STORAGE_LEVELDB_INCLUDE_DB_H_
 
 #include <cstdint>
-#include <cstdio>
+#include <string>
 
 #include "leveldb/export.h"
 #include "leveldb/iterator.h"
-#include "leveldb/options.h"
+#include "slice.h"
+#include "status.h"
 
 namespace leveldb {
 

@@ -8,9 +8,9 @@
 #include <cstdint>
 #include <string>
 #include <type_traits>
+#include <cassert>
 
 #include "leveldb/slice.h"
-#include "util/logging.h"
 #include "util/no_destructor.h"
 
 namespace leveldb {

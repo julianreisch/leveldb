@@ -8,8 +8,11 @@
 #include <set>
 #include <utility>
 #include <vector>
+#include <string>
 
 #include "db/dbformat.h"
+#include "leveldb/slice.h"
+#include "leveldb/status.h"
 
 namespace leveldb {
 

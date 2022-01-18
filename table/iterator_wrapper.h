@@ -7,6 +7,9 @@
 
 #include "leveldb/iterator.h"
 #include "leveldb/slice.h"
+#include <new>
+#include "leveldb/status.h"
+#include <cassert>
 
 namespace leveldb {
 

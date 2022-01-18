@@ -34,9 +34,20 @@
 #include "db/table_cache.h"
 #include "db/version_edit.h"
 #include "db/write_batch_internal.h"
+#include "util/logging.h"
 #include "leveldb/comparator.h"
-#include "leveldb/db.h"
 #include "leveldb/env.h"
+#include "leveldb/slice.h"
+#include "leveldb/write_batch.h"
+#include "leveldb/table_builder.h"
+#include "leveldb/cache.h"
+#include "leveldb/status.h"
+#include "leveldb/options.h"
+#include <string>
+#include "leveldb/iterator.h"
+#include <cstdint>
+#include <cstring>
+#include <vector>
 
 namespace leveldb {
 

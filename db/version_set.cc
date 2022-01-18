@@ -6,18 +6,29 @@
 
 #include <algorithm>
 #include <cstdio>
+#include <string>
+#include <set>
+#include <vector>
+#include <cassert>
 
 #include "db/filename.h"
 #include "db/log_reader.h"
 #include "db/log_writer.h"
-#include "db/memtable.h"
 #include "db/table_cache.h"
+#include "dbformat.h"
+#include "version_edit.h"
 #include "leveldb/env.h"
-#include "leveldb/table_builder.h"
+#include "leveldb/table.h"
+#include "leveldb/slice.h"
+#include "leveldb/status.h"
+#include "leveldb/comparator.h"
+#include "leveldb/options.h"
+#include "leveldb/iterator.h"
 #include "table/merger.h"
 #include "table/two_level_iterator.h"
 #include "util/coding.h"
 #include "util/logging.h"
+#include "port/port_stdcxx.h"
 
 namespace leveldb {
 

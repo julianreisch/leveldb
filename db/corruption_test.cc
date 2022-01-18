@@ -5,16 +5,22 @@
 #include <sys/types.h>
 
 #include "gtest/gtest.h"
+#include <gmock/gmock-matchers.h>
 #include "db/db_impl.h"
 #include "db/filename.h"
 #include "db/log_format.h"
-#include "db/version_set.h"
+#include "dbformat.h"
 #include "leveldb/cache.h"
 #include "leveldb/db.h"
-#include "leveldb/table.h"
 #include "leveldb/write_batch.h"
+#include "leveldb/options.h"
+#include "leveldb/status.h"
+#include "leveldb/slice.h"
+#include "leveldb/iterator.h"
+#include "leveldb/env.h"
 #include "util/logging.h"
 #include "util/testutil.h"
+#include "util/random.h"
 
 namespace leveldb {
 

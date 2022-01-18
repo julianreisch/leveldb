@@ -4,10 +4,13 @@
 
 #include "table/two_level_iterator.h"
 
-#include "leveldb/table.h"
-#include "table/block.h"
-#include "table/format.h"
+#include "leveldb/status.h"
+#include "leveldb/options.h"
+#include "leveldb/slice.h"
+#include "leveldb/iterator.h"
 #include "table/iterator_wrapper.h"
+#include <string>
+#include <cassert>
 
 namespace leveldb {
 

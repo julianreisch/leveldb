@@ -3,14 +3,18 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "gtest/gtest.h"
+#include <gmock/gmock-matchers.h>
 #include "db/db_impl.h"
 #include "db/filename.h"
-#include "db/version_set.h"
 #include "db/write_batch_internal.h"
+#include "dbformat.h"
+#include "log_writer.h"
 #include "leveldb/db.h"
 #include "leveldb/env.h"
 #include "leveldb/write_batch.h"
-#include "util/logging.h"
+#include "leveldb/slice.h"
+#include "leveldb/options.h"
+#include "leveldb/status.h"
 #include "util/testutil.h"
 
 namespace leveldb {

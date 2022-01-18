@@ -4,10 +4,16 @@
 
 #include "db/memtable.h"
 #include "db/dbformat.h"
+#include "skiplist.h"
 #include "leveldb/comparator.h"
-#include "leveldb/env.h"
 #include "leveldb/iterator.h"
+#include "leveldb/status.h"
+#include "leveldb/slice.h"
 #include "util/coding.h"
+#include <string>
+#include <cstring>
+#include "util/arena.h"
+#include <cassert>
 
 namespace leveldb {
 

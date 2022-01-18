@@ -4,7 +4,8 @@
 
 #include "util/hash.h"
 
-#include <cstring>
+#include <cstdint>
+#include <cstddef>
 
 #include "util/coding.h"
 

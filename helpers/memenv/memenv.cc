@@ -5,15 +5,16 @@
 #include "helpers/memenv/memenv.h"
 
 #include <cstring>
-#include <limits>
 #include <map>
 #include <string>
 #include <vector>
+#include <cassert>
 
 #include "leveldb/env.h"
 #include "leveldb/status.h"
-#include "port/port.h"
+#include "leveldb/slice.h"
 #include "port/thread_annotations.h"
+#include "port/port_stdcxx.h"
 #include "util/mutexlock.h"
 
 namespace leveldb {

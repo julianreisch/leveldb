@@ -3,6 +3,9 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "util/arena.h"
+#include <vector>
+#include <cassert>
+#include <atomic>
 
 namespace leveldb {
 

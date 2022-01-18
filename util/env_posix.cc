@@ -12,6 +12,7 @@
 #include <sys/time.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <port/port_config.h>
 
 #include <atomic>
 #include <cerrno>
@@ -27,12 +28,13 @@
 #include <thread>
 #include <type_traits>
 #include <utility>
+#include <cassert>
 
 #include "leveldb/env.h"
 #include "leveldb/slice.h"
 #include "leveldb/status.h"
-#include "port/port.h"
 #include "port/thread_annotations.h"
+#include "port/port_stdcxx.h"
 #include "util/env_posix_test_helper.h"
 #include "util/posix_logger.h"
 

@@ -11,6 +11,9 @@
 #include <set>
 #include <string>
 #include <vector>
+#include <deque>
+#include <cassert>
+#include <cstring>
 
 #include "db/builder.h"
 #include "db/db_iter.h"
@@ -22,16 +25,21 @@
 #include "db/table_cache.h"
 #include "db/version_set.h"
 #include "db/write_batch_internal.h"
+#include "snapshot.h"
+#include "version_edit.h"
 #include "leveldb/db.h"
 #include "leveldb/env.h"
 #include "leveldb/status.h"
-#include "leveldb/table.h"
 #include "leveldb/table_builder.h"
-#include "port/port.h"
-#include "table/block.h"
+#include "leveldb/options.h"
+#include "leveldb/cache.h"
+#include "leveldb/comparator.h"
+#include "leveldb/iterator.h"
+#include "leveldb/slice.h"
+#include "leveldb/write_batch.h"
+#include "port/port_stdcxx.h"
+#include "port/thread_annotations.h"
 #include "table/merger.h"
-#include "table/two_level_iterator.h"
-#include "util/coding.h"
 #include "util/logging.h"
 #include "util/mutexlock.h"
 

@@ -6,7 +6,11 @@
 
 #include "leveldb/comparator.h"
 #include "leveldb/iterator.h"
+#include "leveldb/slice.h"
+#include "leveldb/status.h"
 #include "table/iterator_wrapper.h"
+#include <cassert>
+#include <new>
 
 namespace leveldb {
 

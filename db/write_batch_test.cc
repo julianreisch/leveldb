@@ -5,8 +5,11 @@
 #include "gtest/gtest.h"
 #include "db/memtable.h"
 #include "db/write_batch_internal.h"
-#include "leveldb/db.h"
-#include "leveldb/env.h"
+#include "dbformat.h"
+#include "leveldb/write_batch.h"
+#include "leveldb/slice.h"
+#include "leveldb/iterator.h"
+#include "leveldb/status.h"
 #include "util/logging.h"
 
 namespace leveldb {

@@ -6,9 +6,16 @@
 
 #include <cassert>
 #include <cstdio>
+#include <cstdint>
+#include <ext/new_allocator.h>
+#include <string>
+#include <ext/alloc_traits.h>
+#include <ext/type_traits.h>
+#include <cstring>
 
-#include "db/dbformat.h"
 #include "leveldb/env.h"
+#include "leveldb/status.h"
+#include "leveldb/slice.h"
 #include "util/logging.h"
 
 namespace leveldb {

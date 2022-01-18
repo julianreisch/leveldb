@@ -3,6 +3,9 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "db/version_edit.h"
+#include "leveldb/slice.h"
+#include "dbformat.h"
+#include "leveldb/status.h"
 
 #include "gtest/gtest.h"
 

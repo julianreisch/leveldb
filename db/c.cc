@@ -8,6 +8,10 @@
 
 #include <cstdint>
 #include <cstdlib>
+#include <string>
+#include <vector>
+#include <cassert>
+#include <cstring>
 
 #include "leveldb/cache.h"
 #include "leveldb/comparator.h"
@@ -18,6 +22,7 @@
 #include "leveldb/options.h"
 #include "leveldb/status.h"
 #include "leveldb/write_batch.h"
+#include "leveldb/slice.h"
 
 using leveldb::Cache;
 using leveldb::Comparator;

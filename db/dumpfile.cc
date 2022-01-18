@@ -4,7 +4,13 @@
 
 #include "leveldb/dumpfile.h"
 
-#include <cstdio>
+#include <cstdint>
+#include <cstddef>
+#include <string>
+#include <new>
+#include <ext/alloc_traits.h>
+#include <ext/type_traits.h>
+#include <ext/new_allocator.h>
 
 #include "db/dbformat.h"
 #include "db/filename.h"
@@ -17,6 +23,7 @@
 #include "leveldb/status.h"
 #include "leveldb/table.h"
 #include "leveldb/write_batch.h"
+#include "leveldb/slice.h"
 #include "util/logging.h"
 
 namespace leveldb {

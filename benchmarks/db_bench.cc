@@ -2,11 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
-#include <sys/types.h>
 
 #include <atomic>
 #include <cstdio>
 #include <cstdlib>
+#include <string>
+#include <vector>
+#include <cstring>
+#include <cassert>
 
 #include "leveldb/cache.h"
 #include "leveldb/comparator.h"
@@ -14,7 +17,12 @@
 #include "leveldb/env.h"
 #include "leveldb/filter_policy.h"
 #include "leveldb/write_batch.h"
-#include "port/port.h"
+#include "leveldb/iterator.h"
+#include "leveldb/status.h"
+#include "leveldb/slice.h"
+#include "leveldb/options.h"
+#include "port/port_stdcxx.h"
+#include "port/thread_annotations.h"
 #include "util/crc32c.h"
 #include "util/histogram.h"
 #include "util/mutexlock.h"

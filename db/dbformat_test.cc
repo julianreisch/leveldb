@@ -5,7 +5,7 @@
 #include "db/dbformat.h"
 
 #include "gtest/gtest.h"
-#include "util/logging.h"
+#include "leveldb/slice.h"
 
 namespace leveldb {
 
