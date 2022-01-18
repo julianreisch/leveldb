@@ -34,9 +34,28 @@
 #include "db/table_cache.h"
 #include "db/version_edit.h"
 #include "db/write_batch_internal.h"
+#include "util/logging.h"
 #include "leveldb/comparator.h"
-#include "leveldb/db.h"
 #include "leveldb/env.h"
+#include "leveldb/write_batch.h"
+#include <new>
+#include <algorithm>
+#include <cstdint>
+#include <vector>
+#include "leveldb/status.h"
+#include <string>
+#include <cstddef>
+#include "leveldb/cache.h"
+#include "leveldb/options.h"
+#include <ext/new_allocator.h>
+#include <memory>
+#include "leveldb/slice.h"
+#include "leveldb/table_builder.h"
+#include <ext/alloc_traits.h>
+#include "leveldb/iterator.h"
+#include <cstring>
+#include <ext/type_traits.h>
+#include <type_traits>
 
 namespace leveldb {
 

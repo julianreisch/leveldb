@@ -13,9 +13,9 @@
 #include <cstdint>
 #include <string>
 #include <vector>
+#include <ext/new_allocator.h>
 
 #include "leveldb/slice.h"
-#include "util/hash.h"
 
 namespace leveldb {
 

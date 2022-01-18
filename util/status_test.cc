@@ -5,8 +5,17 @@
 #include "leveldb/status.h"
 
 #include <utility>
+#include <string>
+#include <memory>
+#include <tuple>
 
 #include "gtest/gtest.h"
+#include <gtest/gtest_pred_impl.h>
+#include <gtest/gtest-printers.h>
+#include <gtest/internal/gtest-port.h>
+#include <gtest/gtest-message.h>
+#include <gtest/gtest-test-part.h>
+#include <gtest/internal/gtest-internal.h>
 #include "leveldb/slice.h"
 
 namespace leveldb {

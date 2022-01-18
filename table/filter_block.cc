@@ -5,7 +5,17 @@
 #include "table/filter_block.h"
 
 #include "leveldb/filter_policy.h"
+#include "leveldb/slice.h"
 #include "util/coding.h"
+#include <ext/new_allocator.h>
+#include <type_traits>
+#include <vector>
+#include <cassert>
+#include <cstdint>
+#include <string>
+#include <algorithm>
+#include <cstddef>
+#include <memory>
 
 namespace leveldb {
 

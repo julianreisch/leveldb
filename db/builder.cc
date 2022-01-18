@@ -8,9 +8,17 @@
 #include "db/filename.h"
 #include "db/table_cache.h"
 #include "db/version_edit.h"
-#include "leveldb/db.h"
 #include "leveldb/env.h"
 #include "leveldb/iterator.h"
+#include <string>
+#include "leveldb/status.h"
+#include <features.h>
+#include "leveldb/options.h"
+#include "leveldb/table_builder.h"
+#include <cstdint>
+#include <new>
+#include <cassert>
+#include "leveldb/slice.h"
 
 namespace leveldb {
 

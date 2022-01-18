@@ -4,8 +4,24 @@
 
 #include "db/version_edit.h"
 
-#include "db/version_set.h"
+#include "dbformat.h"
 #include "util/coding.h"
+#include <algorithm>
+#include <memory>
+#include <vector>
+#include <utility>
+#include <type_traits>
+#include <map>
+#include <string>
+#include <cstddef>
+#include <cstdint>
+#include "leveldb/slice.h"
+#include <ext/new_allocator.h>
+#include "leveldb/status.h"
+#include <set>
+#include <ext/type_traits.h>
+#include <ext/alloc_traits.h>
+#include "util/logging.h"
 
 namespace leveldb {
 

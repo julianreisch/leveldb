@@ -11,7 +11,15 @@
 #include <sys/stat.h>
 #include <sys/time.h>
 #include <sys/types.h>
+#include <bits/struct_stat.h>
+#include <bits/libc-header-start.h>
+#include <sys/cdefs.h>
+#include <bits/types/FILE.h>
+#include <bits/types/struct_timeval.h>
 #include <unistd.h>
+#include <asm-generic/errno-base.h>
+#include <features.h>
+#include <port/port_config.h>
 
 #include <atomic>
 #include <cerrno>
@@ -27,12 +35,25 @@
 #include <thread>
 #include <type_traits>
 #include <utility>
+#include <vector>
+#include <cassert>
+#include <deque>
+#include <ext/new_allocator.h>
+#include <tuple>
+#include <memory>
+#include <new>
+#include <chrono>
+#include <ext/alloc_traits.h>
+#include <ext/aligned_buffer.h>
+#include <algorithm>
+#include <ext/type_traits.h>
+#include <map>
 
 #include "leveldb/env.h"
 #include "leveldb/slice.h"
 #include "leveldb/status.h"
-#include "port/port.h"
 #include "port/thread_annotations.h"
+#include "port/port_stdcxx.h"
 #include "util/env_posix_test_helper.h"
 #include "util/posix_logger.h"
 

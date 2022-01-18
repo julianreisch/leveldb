@@ -19,6 +19,7 @@
 #include <cstddef>
 #include <cstring>
 #include <string>
+#include <features.h>
 
 #include "leveldb/export.h"
 

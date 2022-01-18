@@ -9,11 +9,18 @@
 #include "leveldb/env.h"
 #include "leveldb/filter_policy.h"
 #include "leveldb/options.h"
+#include "leveldb/status.h"
+#include "leveldb/slice.h"
+#include "leveldb/iterator.h"
 #include "table/block.h"
 #include "table/filter_block.h"
 #include "table/format.h"
 #include "table/two_level_iterator.h"
 #include "util/coding.h"
+#include <cstdint>
+#include <new>
+#include <string>
+#include <cstddef>
 
 namespace leveldb {
 

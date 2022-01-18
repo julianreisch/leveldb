@@ -5,24 +5,59 @@
 #include "leveldb/db.h"
 
 #include <atomic>
-#include <cinttypes>
 #include <string>
+#include <cstdio>
+#include <istream>
+#include <utility>
+#include <vector>
+#include <bits/long-double.h>
+#include <memory>
+#include <map>
+#include <bits/stdint-intn.h>
+#include <ext/new_allocator.h>
+#include <bits/libc-header-start.h>
+#include <new>
+#include <cstddef>
+#include <iostream>
+#include <tuple>
+#include <algorithm>
+#include <sys/cdefs.h>
+#include <type_traits>
+#include <cstdint>
+#include <features.h>
+#include <ext/aligned_buffer.h>
+#include <ext/type_traits.h>
+#include <ext/alloc_traits.h>
+#include <cassert>
+#include <cstring>
 
 #include "gtest/gtest.h"
+#include <gtest/gtest-matchers.h>
+#include <gtest/gtest-message.h>
+#include <gtest/gtest-test-part.h>
+#include <gtest/internal/gtest-port.h>
+#include <gtest/gtest-printers.h>
+#include <gmock/gmock-matchers.h>
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/gtest_pred_impl.h>
 #include "db/db_impl.h"
 #include "db/filename.h"
-#include "db/version_set.h"
-#include "db/write_batch_internal.h"
+#include "dbformat.h"
 #include "leveldb/cache.h"
 #include "leveldb/env.h"
 #include "leveldb/filter_policy.h"
-#include "leveldb/table.h"
-#include "port/port.h"
+#include "leveldb/write_batch.h"
+#include "leveldb/iterator.h"
+#include "leveldb/options.h"
+#include "leveldb/status.h"
+#include "leveldb/comparator.h"
+#include "leveldb/slice.h"
 #include "port/thread_annotations.h"
-#include "util/hash.h"
+#include "port/port_stdcxx.h"
 #include "util/logging.h"
 #include "util/mutexlock.h"
 #include "util/testutil.h"
+#include "util/random.h"
 
 namespace leveldb {
 

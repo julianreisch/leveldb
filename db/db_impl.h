@@ -9,14 +9,22 @@
 #include <deque>
 #include <set>
 #include <string>
+#include <vector>
+#include <map>
+#include <cstdint>
+#include <bits/stdint-intn.h>
+#include <cstddef>
+#include <ext/new_allocator.h>
 
 #include "db/dbformat.h"
 #include "db/log_writer.h"
 #include "db/snapshot.h"
 #include "leveldb/db.h"
 #include "leveldb/env.h"
-#include "port/port.h"
+#include "leveldb/status.h"
+#include "leveldb/options.h"
 #include "port/thread_annotations.h"
+#include "port/port_stdcxx.h"
 
 namespace leveldb {
 

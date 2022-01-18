@@ -9,6 +9,10 @@
 #define STORAGE_LEVELDB_UTIL_POSIX_LOGGER_H_
 
 #include <sys/time.h>
+#include <bits/types/FILE.h>
+#include <bits/types/struct_tm.h>
+#include <bits/types/struct_timeval.h>
+#include <bits/types/time_t.h>
 
 #include <cassert>
 #include <cstdarg>
@@ -16,6 +20,14 @@
 #include <ctime>
 #include <sstream>
 #include <thread>
+#include <string>
+#include <cstddef>
+#include <new>
+#include <istream>
+#include <iostream>
+#include <memory>
+#include <ios>
+#include <features.h>
 
 #include "leveldb/env.h"
 

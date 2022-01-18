@@ -6,6 +6,10 @@
 
 #include "leveldb/slice.h"
 #include "util/hash.h"
+#include <string>
+#include <cstddef>
+#include <new>
+#include <cstdint>
 
 namespace leveldb {
 

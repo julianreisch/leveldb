@@ -7,6 +7,10 @@
 
 #include "db/dbformat.h"
 #include "leveldb/write_batch.h"
+#include <cstddef>
+#include <string>
+#include "leveldb/slice.h"
+#include <memory>
 
 namespace leveldb {
 

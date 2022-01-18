@@ -3,10 +3,25 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "util/coding.h"
+#include "leveldb/slice.h"
 
 #include <vector>
+#include <type_traits>
+#include <memory>
+#include <tuple>
+#include <cstdint>
+#include <string>
+#include <ext/new_allocator.h>
+#include <iostream>
+#include <cstddef>
 
 #include "gtest/gtest.h"
+#include <gtest/gtest-printers.h>
+#include <gtest/gtest-test-part.h>
+#include <gtest/gtest-message.h>
+#include <gtest/internal/gtest-port.h>
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/gtest_pred_impl.h>
 
 namespace leveldb {
 

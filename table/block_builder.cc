@@ -30,9 +30,17 @@
 
 #include <algorithm>
 #include <cassert>
+#include <string>
+#include <cstddef>
+#include <memory>
+#include <vector>
+#include <ext/new_allocator.h>
+#include <cstdint>
+#include <type_traits>
 
 #include "leveldb/comparator.h"
 #include "leveldb/options.h"
+#include "leveldb/slice.h"
 #include "util/coding.h"
 
 namespace leveldb {

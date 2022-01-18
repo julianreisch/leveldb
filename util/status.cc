@@ -3,10 +3,18 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "leveldb/status.h"
+#include "leveldb/slice.h"
 
 #include <cstdio>
+#include <cstdint>
+#include <cstring>
+#include <string>
+#include <new>
+#include <memory>
+#include <cstddef>
+#include <features.h>
+#include <cassert>
 
-#include "port/port.h"
 
 namespace leveldb {
 

@@ -7,6 +7,8 @@
 
 #include "db/dbformat.h"
 #include "leveldb/db.h"
+#include <new>
+#include <cassert>
 
 namespace leveldb {
 

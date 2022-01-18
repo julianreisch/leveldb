@@ -6,8 +6,39 @@
 
 #include <map>
 #include <string>
+#include <tuple>
+#include <ext/aligned_buffer.h>
+#include <type_traits>
+#include <utility>
+#include <iostream>
+#include <cstdint>
+#include <cstdio>
+#include <memory>
+#include <cassert>
+#include <vector>
+#include <sys/cdefs.h>
+#include <cstring>
+#include <ext/new_allocator.h>
+#include <features.h>
+#include <cstdlib>
+#include <ext/type_traits.h>
+#include <bits/libc-header-start.h>
+#include <new>
+#include <cstddef>
+#include <istream>
+#include <bits/long-double.h>
+#include <algorithm>
+#include <ext/alloc_traits.h>
 
 #include "gtest/gtest.h"
+#include <gtest/gtest-matchers.h>
+#include <gtest/gtest-test-part.h>
+#include <gtest/gtest-message.h>
+#include <gmock/gmock-matchers.h>
+#include <gtest/internal/gtest-port.h>
+#include <gtest/gtest-printers.h>
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/gtest_pred_impl.h>
 #include "db/dbformat.h"
 #include "db/memtable.h"
 #include "db/write_batch_internal.h"
@@ -15,11 +46,18 @@
 #include "leveldb/env.h"
 #include "leveldb/iterator.h"
 #include "leveldb/table_builder.h"
+#include "leveldb/comparator.h"
+#include "leveldb/options.h"
+#include "leveldb/write_batch.h"
+#include "leveldb/status.h"
+#include "leveldb/slice.h"
 #include "table/block.h"
 #include "table/block_builder.h"
 #include "table/format.h"
 #include "util/random.h"
 #include "util/testutil.h"
+#include "port/port_stdcxx.h"
+#include "util/logging.h"
 
 namespace leveldb {
 

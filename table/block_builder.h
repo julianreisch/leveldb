@@ -7,6 +7,9 @@
 
 #include <cstdint>
 #include <vector>
+#include <string>
+#include <ext/new_allocator.h>
+#include <cstddef>
 
 #include "leveldb/slice.h"
 

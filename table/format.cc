@@ -5,10 +5,19 @@
 #include "table/format.h"
 
 #include "leveldb/env.h"
-#include "port/port.h"
-#include "table/block.h"
+#include "leveldb/options.h"
+#include "leveldb/slice.h"
+#include "leveldb/status.h"
+#include "port/port_stdcxx.h"
 #include "util/coding.h"
 #include "util/crc32c.h"
+#include <cassert>
+#include <memory>
+#include <string>
+#include <cstddef>
+#include <cstdint>
+#include <new>
+#include <features.h>
 
 namespace leveldb {
 

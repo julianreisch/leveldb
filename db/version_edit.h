@@ -8,8 +8,20 @@
 #include <set>
 #include <utility>
 #include <vector>
+#include <cstddef>
+#include <string>
+#include <cstdint>
+#include <ext/aligned_buffer.h>
+#include <ext/new_allocator.h>
+#include <map>
+#include <new>
+#include <type_traits>
+#include <ext/alloc_traits.h>
+#include <ext/type_traits.h>
 
 #include "db/dbformat.h"
+#include "leveldb/slice.h"
+#include "leveldb/status.h"
 
 namespace leveldb {
 

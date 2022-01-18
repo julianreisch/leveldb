@@ -18,11 +18,24 @@
 #include <map>
 #include <set>
 #include <vector>
+#include <cassert>
+#include <ext/new_allocator.h>
+#include <cstdint>
+#include <type_traits>
+#include <bits/stdint-intn.h>
+#include <string>
+#include <utility>
+#include <ext/aligned_buffer.h>
+#include <cstddef>
+#include <new>
 
 #include "db/dbformat.h"
 #include "db/version_edit.h"
-#include "port/port.h"
 #include "port/thread_annotations.h"
+#include "leveldb/slice.h"
+#include "leveldb/status.h"
+#include "leveldb/options.h"
+#include "port/port_stdcxx.h"
 
 namespace leveldb {
 

@@ -6,8 +6,22 @@
 
 #include <limits>
 #include <string>
+#include <iostream>
+#include <ext/new_allocator.h>
+#include <cstddef>
+#include <memory>
+#include <tuple>
+#include <ext/type_traits.h>
+#include <ext/alloc_traits.h>
+#include <cstdint>
 
 #include "gtest/gtest.h"
+#include <gtest/gtest-printers.h>
+#include <gtest/gtest-test-part.h>
+#include <gtest/gtest-message.h>
+#include <gtest/internal/gtest-port.h>
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/gtest_pred_impl.h>
 #include "leveldb/slice.h"
 
 namespace leveldb {

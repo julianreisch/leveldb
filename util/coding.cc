@@ -3,6 +3,10 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "util/coding.h"
+#include "leveldb/slice.h"
+#include <cstdint>
+#include <string>
+#include <cstddef>
 
 namespace leveldb {
 

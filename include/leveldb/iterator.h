@@ -18,6 +18,8 @@
 #include "leveldb/export.h"
 #include "leveldb/slice.h"
 #include "leveldb/status.h"
+#include <features.h>
+#include <cassert>
 
 namespace leveldb {
 

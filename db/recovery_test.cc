@@ -3,14 +3,40 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "gtest/gtest.h"
+#include <string>
+#include <ext/new_allocator.h>
+#include <cstddef>
+#include <gtest/gtest-printers.h>
+#include <memory>
+#include <gtest/gtest-matchers.h>
+#include <istream>
+#include <tuple>
+#include <new>
+#include <iostream>
+#include <type_traits>
+#include <gmock/gmock-matchers.h>
+#include <gtest/gtest-test-part.h>
+#include <cstdio>
+#include <gtest/gtest_pred_impl.h>
+#include <cstdint>
+#include <vector>
+#include <ext/alloc_traits.h>
+#include <gtest/internal/gtest-port.h>
+#include <algorithm>
+#include <gtest/internal/gtest-internal.h>
+#include <ext/type_traits.h>
+#include <gtest/gtest-message.h>
 #include "db/db_impl.h"
 #include "db/filename.h"
-#include "db/version_set.h"
 #include "db/write_batch_internal.h"
+#include "dbformat.h"
+#include "log_writer.h"
 #include "leveldb/db.h"
 #include "leveldb/env.h"
 #include "leveldb/write_batch.h"
-#include "util/logging.h"
+#include "leveldb/status.h"
+#include "leveldb/options.h"
+#include "leveldb/slice.h"
 #include "util/testutil.h"
 
 namespace leveldb {

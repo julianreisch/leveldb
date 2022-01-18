@@ -17,6 +17,8 @@
 #include <cstdint>
 #include <string>
 #include <vector>
+#include <cstdio>
+#include <cstddef>
 
 #include "leveldb/export.h"
 #include "leveldb/status.h"

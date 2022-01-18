@@ -5,6 +5,17 @@
 #include "util/hash.h"
 
 #include "gtest/gtest.h"
+#include <gtest/internal/gtest-port.h>
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/gtest_pred_impl.h>
+#include <gtest/gtest-printers.h>
+#include <gtest/gtest-message.h>
+#include <iostream>
+#include <cstdint>
+#include <memory>
+#include <gtest/gtest-test-part.h>
+#include <string>
+#include <cstddef>
 
 namespace leveldb {
 

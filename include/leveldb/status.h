@@ -13,8 +13,10 @@
 #ifndef STORAGE_LEVELDB_INCLUDE_STATUS_H_
 #define STORAGE_LEVELDB_INCLUDE_STATUS_H_
 
-#include <algorithm>
 #include <string>
+#include <type_traits>
+#include <utility>
+#include <new>
 
 #include "leveldb/export.h"
 #include "leveldb/slice.h"

@@ -3,9 +3,27 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "gtest/gtest.h"
+#include <cstdio>
+#include <string>
+#include <gtest/gtest-printers.h>
+#include <memory>
+#include <iostream>
+#include <gtest/gtest_pred_impl.h>
+#include <istream>
+#include <cstdint>
+#include <cstddef>
+#include <new>
+#include <gtest/internal/gtest-port.h>
+#include <tuple>
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/gtest-test-part.h>
+#include <gtest/gtest-message.h>
 #include "db/log_reader.h"
 #include "db/log_writer.h"
+#include "log_format.h"
 #include "leveldb/env.h"
+#include "leveldb/status.h"
+#include "leveldb/slice.h"
 #include "util/coding.h"
 #include "util/crc32c.h"
 #include "util/random.h"

@@ -3,6 +3,11 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "leveldb/iterator.h"
+#include <features.h>
+#include <new>
+#include "leveldb/slice.h"
+#include "leveldb/status.h"
+#include <cassert>
 
 namespace leveldb {
 

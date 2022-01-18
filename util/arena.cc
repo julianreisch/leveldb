@@ -3,6 +3,15 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "util/arena.h"
+#include <vector>
+#include <new>
+#include <cassert>
+#include <cstddef>
+#include <type_traits>
+#include <algorithm>
+#include <ext/new_allocator.h>
+#include <atomic>
+#include <cstdint>
 
 namespace leveldb {
 

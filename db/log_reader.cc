@@ -3,10 +3,18 @@
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 #include "db/log_reader.h"
+#include "log_format.h"
 
 #include <cstdio>
+#include <new>
+#include <string>
+#include <cstddef>
+#include <cstdint>
+#include <memory>
 
 #include "leveldb/env.h"
+#include "leveldb/slice.h"
+#include "leveldb/status.h"
 #include "util/coding.h"
 #include "util/crc32c.h"
 

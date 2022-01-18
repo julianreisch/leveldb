@@ -6,11 +6,34 @@
 
 #include <atomic>
 #include <set>
+#include <memory>
+#include <string>
+#include <istream>
+#include <tuple>
+#include <map>
+#include <cstdio>
+#include <utility>
+#include <iostream>
+#include <cstdint>
+#include <cstddef>
+#include <features.h>
+#include <ext/new_allocator.h>
+#include <sys/cdefs.h>
+#include <type_traits>
+#include <ext/aligned_buffer.h>
+#include <cassert>
+#include <bits/stdint-intn.h>
 
 #include "gtest/gtest.h"
+#include <gtest/gtest-printers.h>
+#include <gtest/internal/gtest-port.h>
+#include <gtest/gtest-test-part.h>
+#include <gtest/gtest-message.h>
+#include <gtest/internal/gtest-internal.h>
+#include <gtest/gtest_pred_impl.h>
 #include "leveldb/env.h"
-#include "port/port.h"
 #include "port/thread_annotations.h"
+#include "port/port_stdcxx.h"
 #include "util/arena.h"
 #include "util/hash.h"
 #include "util/random.h"

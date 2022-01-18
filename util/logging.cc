@@ -6,10 +6,11 @@
 
 #include <cstdarg>
 #include <cstdio>
-#include <cstdlib>
 #include <limits>
+#include <string>
+#include <cstdint>
+#include <cstddef>
 
-#include "leveldb/env.h"
 #include "leveldb/slice.h"
 
 namespace leveldb {

@@ -5,8 +5,11 @@
 #include "util/testutil.h"
 
 #include <string>
+#include <cstdint>
+#include <cstddef>
 
 #include "util/random.h"
+#include "leveldb/slice.h"
 
 namespace leveldb {
 namespace test {
